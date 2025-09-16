@@ -1,0 +1,262 @@
+/* Header Layout Fixes for Logo Flexibility */
+
+/* Ensure header layout is robust regardless of logo dimensions */
+.main-header .header-lower {
+  min-height: 80px;
+}
+
+/* Fix main container alignment - override flex-end to center */
+.header-style-one .header-lower .main-box {
+  align-items: center !important;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Logo container improvements */
+.header-style-one .header-lower .logo-box {
+  /* Override excessive base margin */
+  margin-left: 0 !important;
+  margin-right: 20px !important;
+  /* Flexible sizing that adapts to logo dimensions */
+  width: auto;
+  flex-shrink: 0;
+  /* Responsive padding */
+  padding: clamp(10px, 2vh, 20px) clamp(15px, 3vw, 25px);
+  /* Ensure proper alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo image improvements */
+.main-header .logo img {
+  /* Ensure logo maintains aspect ratio */
+  display: block;
+  /* Smooth transitions for responsive changes */
+  transition: all 0.3s ease;
+}
+
+/* Navigation container improvements */
+.main-header .main-box .nav-outer {
+  /* Ensure navigation takes remaining space */
+  flex: 1;
+  /* Prevent navigation from being squeezed */
+  min-width: 0;
+  /* Override base width setting */
+  width: auto !important;
+  /* Ensure proper alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation menu improvements */
+.main-menu .navigation {
+  /* Ensure proper spacing */
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 4vw, 20px);
+}
+
+.main-menu .navigation > li {
+  /* Prevent menu items from being too cramped */
+  white-space: nowrap;
+}
+
+/* Outer box (CTA button) improvements */
+.main-header .outer-box {
+  /* Ensure CTA button area is flexible */
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Sticky header improvements */
+.sticky-header .logo img {
+  /* Consistent sizing in sticky header */
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobile menu logo improvements */
+.mobile-menu .nav-logo img {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Additional responsive improvements */
+@media (max-width: 1439px) {
+  .header-style-one .header-lower .logo-box {
+    margin-left: 0 !important;
+    margin-right: 15px !important;
+    padding: clamp(8px, 1.5vh, 15px) clamp(10px, 2vw, 20px);
+  }
+
+  .header-style-one .header-lower .main-box {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-menu .navigation {
+    gap: clamp(15px, 3vw, 30px);
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Hide main navigation menu on mobile - override all existing rules */
+  .main-header .main-menu,
+  .header-style-one .header-lower .main-menu,
+  .main-header .nav-outer .main-menu,
+  .nav-outer .main-menu {
+    display: none !important;
+  }
+
+  /* Mobile header layout - logo centered, toggle button on right */
+  .header-style-one .header-lower .main-box {
+    padding: 0 15px !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    position: relative !important;
+  }
+
+  .header-style-one .header-lower .logo-box {
+    /* Mobile-specific adjustments */
+    background-color: transparent !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    padding: 8px 12px !important;
+    min-width: auto !important;
+    max-width: none !important;
+    /* Center the logo */
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 1 !important;
+  }
+
+  /* Ensure nav-outer only contains mobile toggle and is positioned on the right */
+  .header-style-one .header-lower .nav-outer {
+    width: auto !important;
+    flex: none !important;
+    margin-left: auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  /* Hide CTA button on mobile */
+  .header-style-one .header-lower .outer-box .theme-btn {
+    display: none !important;
+  }
+
+  /* Ensure mobile toggle is visible and properly positioned */
+  .mobile-nav-toggler {
+    display: block !important;
+    margin-left: 0 !important;
+    position: relative !important;
+  }
+
+  /* Override any conflicting logo positioning from responsive.css */
+  .header-style-one .header-lower .logo-box .logo {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-style-one .header-lower .logo-box {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 5px 8px !important;
+    /* Maintain centered position on smaller screens */
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .header-style-one .header-lower .main-box {
+    padding: 0 10px !important;
+  }
+}
+
+/* Ensure header doesn't break with very wide logos */
+@media (min-width: 1440px) {
+  .header-style-one .header-lower .logo-box {
+    max-width: 400px;
+  }
+}
+
+/* Fix for very tall logos */
+.main-header .logo img[style*="height"] {
+  max-height: 80px !important;
+}
+
+/* Additional layout fixes */
+.header-style-one .header-lower .main-box {
+  align-items: center !important;
+  min-height: 80px;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+/* Prevent logo from causing horizontal scroll */
+.header-style-one .header-lower .logo-box {
+  overflow: hidden;
+}
+
+.header-style-one .header-lower .logo-box .logo {
+  width: 100%;
+  text-align: center;
+}
+
+/* Ensure main menu navigation is properly aligned */
+.main-header .main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .main-menu .navigation {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix outer box (CTA button) alignment */
+.main-header .outer-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Ensure proper spacing between logo and navigation */
+.header-style-one .header-lower .nav-outer {
+  margin-left: 20px;
+}
+
+/* Override any conflicting base styles */
+.header-style-one .header-lower .logo-box {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.work-abroad-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e63946; /* Red like your screenshot */
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 40px; /* pill shape */
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-right: 15px; /* spacing before consultation button */
+}
+
+.work-abroad-btn:hover {
+  background-color: #d62828; /* darker red on hover */
+  color: #fff;
+}

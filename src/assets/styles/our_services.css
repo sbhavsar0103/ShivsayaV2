@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Value Added Services Page Styles */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+  background: #d76c1f38;
+  min-height: 100vh;
+}
+
+/* Value Added Services Section */
+.value-added-services {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 600px;
+  padding: 40px 0;
+  gap: 10px;
+}
+
+/* Services Content - Left Side */
+.services-content {
+  flex: 1;
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+.services-header {
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.services-title .highlight {
+  color: #d76c1f;
+}
+
+.services-description {
+  font-size: 16px;
+  color: #3A1F16;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-item-our {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 16px;
+  color: #2c3e50;
+  line-height: 2;
+}
+
+.check-icon {
+  background: #d76c1f;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Services Visual - Image Implementation */
+.services-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.services-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-image {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .services-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+} */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .services-wrapper {
+    padding: 30px 0;
+    gap: 40px;
+  }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .services-image {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 968px) {
+  .services-wrapper {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .services-content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .services-title {
+    font-size: 36px;
+  }
+
+  .services-description {
+    font-size: 16px;
+  }
+
+  .service-item-our {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .services-visual {
+    max-width: 100%;
+  }
+
+  .services-image {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .value-added-services {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .services-wrapper {
+    padding: 15px 0;
+    gap: 30px;
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+
+  .services-description {
+    font-size: 15px;
+  }
+
+  .service-item-our {
+    font-size: 15px;
+  }
+
+  .services-image {
+    max-width: 350px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .value-added-services {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .services-wrapper {
+    padding: 10px 0;
+    gap: 25px;
+  }
+
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-description {
+    font-size: 14px;
+  }
+
+  .service-item-our {
+    font-size: 14px;
+    gap: 12px;
+  }
+
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .services-image {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+}
+
+/* Coaching Section Styles */
+.coaching-section {
+  padding: 15px 0;
+  background: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.coaching-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 600px;
+  padding: 40px 0;
+  gap: 60px;
+}
+
+/* Coaching Visual - Left Side */
+.coaching-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.coaching-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coaching-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coaching-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Coaching Content - Right Side */
+.coaching-content {
+  flex: 1;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+.coaching-header {
+  margin-bottom: 30px;
+}
+
+.coaching-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.coaching-subtitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.coaching-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.coaching-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.feature-item-services {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 15px;
+  color: #2c3e50;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.feature-icon {
+  background: #d76c1f;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.coaching-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.demo-class-btn {
+  background: linear-gradient(80deg, #8c3c0e 0%, #d76c1f 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(169, 205, 77, 0.3);
+}
+
+.demo-class-btn:hover {
+  background: linear-gradient(135deg, #8bc34a 0%, #d76c1f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(169, 205, 77, 0.4);
+}
+
+/* Coaching Section Responsive Design */
+@media (max-width: 1200px) {
+  .coaching-wrapper {
+    padding: 30px 0;
+    gap: 40px;
+  }
+
+  .coaching-title {
+    font-size: 42px;
+  }
+
+  .coaching-subtitle {
+    font-size: 18px;
+  }
+
+  .coaching-image {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 968px) {
+  .coaching-section {
+    padding: 60px 0;
+  }
+
+  .coaching-wrapper {
+    flex-direction: column-reverse;
+    padding: 20px 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .coaching-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .coaching-title {
+    font-size: 36px;
+  }
+
+  .coaching-subtitle {
+    font-size: 18px;
+  }
+
+  .coaching-description {
+    font-size: 16px;
+  }
+
+  .feature-item-services {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .coaching-visual {
+    max-width: 100%;
+  }
+
+  .coaching-image {
+    max-width: 400px;
+  }
+
+  .coaching-cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .coaching-section {
+    padding: 50px 0;
+  }
+
+  .coaching-wrapper {
+    padding: 15px 0;
+    gap: 30px;
+  }
+
+  .coaching-title {
+    font-size: 32px;
+  }
+
+  .coaching-subtitle {
+    font-size: 16px;
+  }
+
+  .coaching-description {
+    font-size: 15px;
+  }
+
+  .feature-item-services {
+    font-size: 14px;
+  }
+
+  .coaching-image {
+    max-width: 350px;
+    border-radius: 8px;
+  }
+
+  .demo-class-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coaching-section {
+    padding: 40px 0;
+  }
+
+  .coaching-wrapper {
+    padding: 10px 0;
+    gap: 25px;
+  }
+
+  .coaching-title {
+    font-size: 28px;
+  }
+
+  .coaching-subtitle {
+    font-size: 15px;
+  }
+
+  .coaching-description {
+    font-size: 14px;
+  }
+
+  .feature-item-services {
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .feature-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+
+  .coaching-image {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .demo-class-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+}
+
+/* Coaching Page Specific Styles */
+.coaching-page-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.coaching-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.coaching-page-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coaching-page-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.coaching-page-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive styles for coaching page */
+@media (max-width: 768px) {
+  .coaching-page-section {
+    padding: 60px 0;
+  }
+
+  .coaching-page-title {
+    font-size: 36px;
+  }
+
+  .coaching-page-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coaching-page-section {
+    padding: 40px 0;
+  }
+
+  .coaching-page-title {
+    font-size: 28px;
+  }
+
+  .coaching-page-description {
+    font-size: 14px;
+  }
+}
