@@ -2254,7 +2254,7 @@ h1.entry-title {
 
 /* Contact Form Section Styles */
 .contact-form-section {
-    background: linear-gradient(80deg, #8c3c0e 0%, #d76c1f 100%);
+    /* background: linear-gradient(80deg, #8c3c0e 0%, #d76c1f 100%); */
     padding: 80px 0;
     position: relative;
     overflow: hidden;

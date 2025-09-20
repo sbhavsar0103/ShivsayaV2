@@ -2,8 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logo/shivasya_PNG.png';
 import '../assets/styles/header-fixes.css';
+import usaFlag from '../assets/images/flags/usa.png';
+import canadaFlag from '../assets/images/flags/canada.png';
+import australiaFlag from '../assets/images/flags/australia.png';
+import ukFlag from '../assets/images/flags/united-kingdom.png';
+import europeFlag from '../assets/images/flags/europe.png';
+import nzFlag from '../assets/images/flags/new-zealand.png';
 
 const Header = () => {
+  const countries = [
+    { name: 'USA', flag: usaFlag, link: "/shivasya-us" },
+    { name: 'Canada', flag: canadaFlag, link: '/study-abroad/canada' },
+    { name: 'Australia', flag: australiaFlag, link: '/study-abroad/australia' },
+    { name: 'New Zealand', flag: nzFlag, link: '/study-abroad/newzealand' },
+    { name: 'UK', flag: ukFlag, link: '/study-abroad/uk' },
+    { name: 'Europe', flag: europeFlag, link: '/study-abroad/europe' },
+  ];
   const location = useLocation();
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
@@ -69,13 +83,25 @@ const Header = () => {
                 <li className={isActive('/services') ? 'current' : ''}><Link to="/services"><b>Our Services</b></Link></li>
                 <li className={isActive('/coaching') ? 'current' : ''}><Link to="/coaching"><b>Coaching</b></Link></li>
                 <li className={isActive('/contact') ? 'current' : ''}><Link to="/contact"><b>Contact Us</b></Link></li>
+                <li className="dropdown">
+                  <span className="dropdown-toggle"><b>STUDY ABROAD</b></span>
+                  <ul className="dropdown-menu">
+                    {countries.map((c) => (
+                      <li key={c.name}>
+                        <Link to={c.link}>
+                          <img src={c.flag} alt={c.name} className="flag-icon" /> {c.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+                <Link to="/work-abroad" className="work-abroad-btn">
+                  <span className="btn-title">Work Abroad</span>
+                </Link>
               </ul>
             </nav>
 
             <div className="outer-box">
-              <Link to="/work-abroad" className="work-abroad-btn">
-                <span className="btn-title">Work Abroad</span>
-              </Link>
               <Link to="/contact" className="theme-btn btn-style-one bg-theme-color3">
                 <span className="btn-title">Sign up for a FREE CONSULTATION</span>
               </Link>
@@ -102,7 +128,6 @@ const Header = () => {
 
       <div className="mobile-menu">
         <div className="menu-backdrop" onClick={closeMobileMenu}></div>
-
         <nav className="menu-box">
           <div className="upper-box">
             <div className="nav-logo">

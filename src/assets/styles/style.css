@@ -242,6 +242,7 @@ a strong {
 
 a img {
 	border: none;
+	width: 40px;
 }
 
 pre,
@@ -911,7 +912,7 @@ li {
 .main-menu .navigation>li>ul>li {
 	position: relative;
 	width: 100%;
-	border-bottom: 1px solid #ebf1f5;
+	/* border-bottom: 1px solid #ebf1f5; */
 }
 
 .main-menu .navigation>li>ul>li:last-child {
