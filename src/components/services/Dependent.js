@@ -22,7 +22,7 @@ const Dependent = () => {
         <>
             {/* DEPENDENT & VISITOR VISA VISITOR VISA Section */}
         <section className="coaching-section">
-          <div className="container">
+          <div className="container" style={{ display: 'block', margin: 'auto' }}>
             <div className="coaching-wrapper">
 
               {/* Left Content - DEPENDENT & VISITOR VISA VISITOR VISA Details */}

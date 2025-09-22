@@ -22,7 +22,7 @@ const ValueAdded = () => {
         <>
             {/* Value Added Services Section */}
         <section className="value-added-services">
-          <div className="container">
+          <div className="container" style={{ display: 'block', margin: 'auto' }}>
             <div className="services-wrapper">
 
               {/* Left Content - Text and Services List */}
