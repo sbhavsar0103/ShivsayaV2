@@ -122,8 +122,21 @@
     margin-bottom: 10px;
 }
 
-.study-banner-left-2 h5{
+.study-banner-left-2 h5 {
     color: #3A1F16;
+}
+
+.study-banner-left-2 p {
+    font-size: 16px;
+    color: #141517;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.study-banner-left-2 {
+    width: 100%;
+    text-align: justify;
+    padding-right: 50px;
 }
 
 .lview {
@@ -175,8 +188,6 @@
 
 .container {
     max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
 }
 
 .row {
@@ -185,7 +196,12 @@
     margin: 0 -15px;
 }
 
-.col-xl-6, .col-lg-6, .col-md-12, .col-md-8, .col-xl-12, .col-md-12 {
+.col-xl-6,
+.col-lg-6,
+.col-md-12,
+.col-md-8,
+.col-xl-12,
+.col-md-12 {
     padding: 0 15px;
     box-sizing: border-box;
 }
@@ -206,7 +222,7 @@
 }
 
 .section-title h4.text-green {
-    color: #28a745;
+    color: #3A1F16;
     font-weight: 500;
 }
 
@@ -252,7 +268,7 @@
     height: 18px;
 }
 
-.radio-toolbar input[type="checkbox"]:checked + label {
+.radio-toolbar input[type="checkbox"]:checked+label {
     background: #28a745;
     color: #fff;
 }
@@ -272,7 +288,7 @@
 }
 
 .read-more {
-    background: #28a745;
+    background: #E38C45;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -281,7 +297,7 @@
 }
 
 .read-more:hover {
-    background: #218838;
+    background: #3A1F16;
 }
 
 .support-contact0 img {
@@ -307,4 +323,12 @@
 
 .mb-4 {
     margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+}
+
+.inner-contect-study-banner{
+    padding-top: 20px;
 }

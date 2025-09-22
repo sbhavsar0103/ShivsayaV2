@@ -12,8 +12,8 @@ import nzFlag from '../assets/images/flags/new-zealand.png';
 const Header = () => {
   const countries = [
     { name: 'USA', flag: usaFlag, link: "/shivasya-us" },
-    { name: 'Canada', flag: canadaFlag, link: '/study-abroad/canada' },
-    { name: 'Australia', flag: australiaFlag, link: '/study-abroad/australia' },
+    { name: 'Canada', flag: canadaFlag, link: '/shivasya-canada' },
+    { name: 'Australia', flag: australiaFlag, link: '/shivasya-austrila' },
     { name: 'New Zealand', flag: nzFlag, link: '/study-abroad/newzealand' },
     { name: 'UK', flag: ukFlag, link: '/study-abroad/uk' },
     { name: 'Europe', flag: europeFlag, link: '/study-abroad/europe' },

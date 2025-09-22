@@ -1,6 +1,8 @@
 import React from 'react';
 import usaBanner from '../../assets/images/us-student-visa.png';
 import usaVisaConsultant from '../../assets/images/usa-visa-consultant.png';
+import contactUs from '../../assets/images/contact_us.png';
+import Footer from '../../components/footer';
 import '../abroadpage/us_study.css'
 
 const UsStudy = () => {
@@ -111,116 +113,113 @@ const UsStudy = () => {
                         <p>
                             Students can enroll in USA Educational Institutions depending on their desired schooling level. Choosing the best USA study visa consultant to get enrollment in the desired institution, course, and visa, followed by the documentation or application, can become overwhelming for a student who wants to study in USA. Visa zone's USA Study Visa Consultant in Ahmedabad offers guidance catering to students' requirements, preparation for visa interviews, assistance regarding past-visa denials, SEVIS fee registration, and finally, help with post-visa approval departure. At Visa Zone Educational and Immigration Services Pvt. Ltd., The team provides exclusive visa assistance, securing the dreams of several aspirants willing to move to the USA for study and post-study employment.
                         </p>
-                    </div>
-                    <div className="contact-form-section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-6 col-lg-6 col-md-12">
-                                    <form method="post" className="contact-form">
-                                        <div className="contact-area-wrapper">
-                                            <div className="section-title mb-50">
-                                                <h2>Discover the possibility . . .</h2>
-                                                <h4 className="text-green">
-                                                    Drop us a line & one of our experts will get in touch with you shortly
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-xl-6">
-                                                <div className="contact-from-input mb-20">
-                                                    <input type="text" placeholder="Name *" name="name" required />
-                                                    <input name="honeypot" className="honeypot" value="" type="text" />
+                        <div className="contact-form-section" style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-xl-6 col-lg-6 col-md-12">
+                                        <form method="post" className="contact-form">
+                                            <div className="contact-area-wrapper">
+                                                <div className="section-title mb-50">
+                                                    <h2>Discover the possibility . . .</h2>
+                                                    <h4 className="text-green">
+                                                        Drop us a line & one of our experts will get in touch with you shortly
+                                                    </h4>
                                                 </div>
                                             </div>
-                                            <div className="col-xl-6">
-                                                <div className="contact-from-input mb-20">
-                                                    <input type="number" id="phone" placeholder="Phone *" name="phone"
-                                                        pattern="[6-9]{1}[0-9]{9}"
-                                                        title="Phone number with 7-9 and remaining 9 digits with 0-9"
-                                                        required
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className="col-xl-12">
-                                                <div className="contact-from-input mb-20">
-                                                    <input type="email" id="email" placeholder="Email *" name="email" required />
-                                                </div>
-                                            </div>
-
-                                            {/* Coaching checkboxes */}
-                                            <div className="col-md-12 mb-4">
-                                                <label className="mb-3">Which coaching are you planning to attend?</label>
-                                                <div className="checkbox-group">
-                                                    <div className="radio-toolbar">
-                                                        <input type="checkbox" value="IELTS" name="coaching[]" id="coaching1" />
-                                                        <label htmlFor="coaching1">
-                                                            <img src="assets/img/webp/main/ielts-form2.webp" alt="" /> IELTS
-                                                        </label>
-                                                    </div>
-                                                    <div className="radio-toolbar">
-                                                        <input type="checkbox" value="PTE" name="coaching[]" id="coaching2" />
-                                                        <label htmlFor="coaching2">
-                                                            <img src="assets/img/webp/main/pte-form.webp" alt="" /> PTE
-                                                        </label>
+                                            <div className="row">
+                                                <div className="col-xl-6">
+                                                    <div className="contact-from-input mb-20">
+                                                        <input type="text" placeholder="Name *" name="name" required />
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <div className="col-xl-6">
+                                                    <div className="contact-from-input mb-20">
+                                                        <input type="number" id="phone" placeholder="Phone *" name="phone"
+                                                            pattern="[6-9]{1}[0-9]{9}"
+                                                            title="Phone number with 7-9 and remaining 9 digits with 0-9"
+                                                            required
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-12">
+                                                    <div className="contact-from-input mb-20">
+                                                        <input type="email" id="email" placeholder="Email *" name="email" required />
+                                                    </div>
+                                                </div>
 
-                                            {/* Country checkboxes */}
-                                            <div className="col-md-12 mb-4">
-                                                <label className="mb-3">Which country are you planning to study in?</label>
-                                                <div className="checkbox-group">
-                                                    <div className="radio-toolbar">
-                                                        <input type="checkbox" value="USA" name="country[]" id="country5" />
-                                                        <label htmlFor="country5">
-                                                            <img src="assets/img/webp/flag/usa-flag.webp" alt="" /> USA
+                                                <div className="col-md-12 mb-4">
+                                                    <label className="mb-3">Which coaching are you planning to attend?</label>
+                                                    <div className="checkbox-group">
+                                                        <div className="radio-toolbar">
+                                                            <input type="checkbox" value="IELTS" name="coaching[]" id="coaching1" />
+                                                            <label htmlFor="coaching1">
+                                                                <img src="assets/img/webp/main/ielts-form2.webp" alt="" /> IELTS
+                                                            </label>
+                                                        </div>
+                                                        <div className="radio-toolbar">
+                                                            <input type="checkbox" value="PTE" name="coaching[]" id="coaching2" />
+                                                            <label htmlFor="coaching2">
+                                                                <img src="assets/img/webp/main/pte-form.webp" alt="" /> PTE
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-12 mb-4">
+                                                    <label className="mb-3">Which country are you planning to study in?</label>
+                                                    <div className="checkbox-group">
+                                                        <div className="radio-toolbar">
+                                                            <input type="checkbox" value="USA" name="country[]" id="country5" />
+                                                            <label htmlFor="country5">
+                                                                <img src="assets/img/webp/flag/usa-flag.webp" alt="" /> USA
+                                                            </label>
+                                                        </div>
+                                                        <div className="radio-toolbar">
+                                                            <input type="checkbox" value="Canada" name="country[]" id="country4" />
+                                                            <label htmlFor="country4">
+                                                                <img src="assets/img/webp/flag/canada.webp" alt="" /> Canada
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-xl-12 mt-2">
+                                                    <div className="contact-from-input mb-15">
+                                                        <textarea placeholder="Message *" name="message"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-xl-12 mb-2">
+                                                    <div className="course-sidebar-list d-flex">
+                                                        <input type="checkbox" name="tncbox" required />
+                                                        <label>
+                                                            <small>By Submitting the form, I agree to the <a href="privacy-policy">Privacy Policy</a> of Visazone</small>
                                                         </label>
                                                     </div>
-                                                    <div className="radio-toolbar">
-                                                        <input type="checkbox" value="Canada" name="country[]" id="country4" />
-                                                        <label htmlFor="country4">
-                                                            <img src="assets/img/webp/flag/canada.webp" alt="" /> Canada
-                                                        </label>
-                                                    </div>
-                                                    {/* Add other countries similarly */}
                                                 </div>
-                                            </div>
 
-                                            <div className="col-xl-12 mt-2">
-                                                <div className="contact-from-input mb-15">
-                                                    <textarea placeholder="Message *" name="message"></textarea>
+                                                <div className="col-xl-12 col-md-12">
+                                                    <button type="submit" className="read-more w-100">Submit &nbsp;<i className="fad fa-paper-plane"></i></button>
                                                 </div>
+
                                             </div>
+                                        </form>
+                                    </div>
 
-                                            <div className="col-xl-12 mb-2">
-                                                <div className="course-sidebar-list d-flex">
-                                                    <input type="checkbox" name="tncbox" required />
-                                                    <label>
-                                                        <small>By Submitting the form, I agree to the <a href="privacy-policy">Privacy Policy</a> of Visazone</small>
-                                                    </label>
-                                                </div>
+                                    <div className="col-xl-6 col-lg-6 col-md-8 my-auto">
+                                        <div className="sidebar-widget-wrapper">
+                                            <div className="support-contact0">
+                                                <img style={{ width: "100%" }} src={contactUs} alt="contact" loading="lazy" />
                                             </div>
-
-                                            <div className="col-xl-12 col-md-12">
-                                                <button type="submit" className="read-more w-100">Submit &nbsp;<i className="fad fa-paper-plane"></i></button>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div>
-
-                                {/* <div className="col-xl-6 col-lg-6 col-md-8 my-auto">
-                                    <div className="sidebar-widget-wrapper">
-                                        <div className="support-contact0">
-                                            <img style={{ width: "100%" }} src="assets/img/webp/main/form-image.webp" alt="contact" loading="lazy" />
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </section>
     );
 };

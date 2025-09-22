@@ -10,6 +10,8 @@ import About from './pages/About';
 import OurServices from './pages/OurServices';
 import Coaching from './pages/coaching';
 import UsStudy from '../src/components/abroadpage/us_study';
+import CanadaStudy from '../src/components/abroadpage/canada_study';
+import AusStudy from '../src/components/abroadpage/austrila_study';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/services" element={<OurServices />} />
         <Route path="/coaching" element={<Coaching />} />
         <Route path="/shivasya-us" element={<UsStudy />} />
+        <Route path="/shivasya-canada" element={<CanadaStudy />} />
+        <Route path="/shivasya-austrila" element={<AusStudy />} />
       </Routes>
     </BrowserRouter>
   );
