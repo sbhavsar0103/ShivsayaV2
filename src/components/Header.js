@@ -14,8 +14,8 @@ const Header = () => {
     { name: 'USA', flag: usaFlag, link: "/shivasya-us" },
     { name: 'Canada', flag: canadaFlag, link: '/shivasya-canada' },
     { name: 'Australia', flag: australiaFlag, link: '/shivasya-austrila' },
-    { name: 'New Zealand', flag: nzFlag, link: '/study-abroad/newzealand' },
-    { name: 'UK', flag: ukFlag, link: '/study-abroad/uk' },
+    { name: 'New Zealand', flag: nzFlag, link: '/shivasya-new-zealand' },
+    { name: 'UK', flag: ukFlag, link: '/shivasya-uk' },
     { name: 'Europe', flag: europeFlag, link: '/study-abroad/europe' },
   ];
   const location = useLocation();

@@ -329,6 +329,34 @@
     display: flex;
 }
 
-.inner-contect-study-banner{
+.inner-contect-study-banner {
     padding-top: 20px;
+}
+
+.types-uk-study {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.types-uk-study th, 
+.types-uk-study td {
+    border: 1px solid #ddd; /* light gray border */
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top; /* ensures bullets align to top */
+}
+
+.types-uk-study th {
+    background-color: #f9f9f9; /* light header background */
+    font-weight: bold;
+}
+
+.types-uk-study tr:nth-child(even) {
+    background-color: #fcfcfc; /* optional striped rows */
+}
+
+.types-uk-study td ul {
+    margin: 0;
+    padding-left: 20px; /* ensures bullets align properly */
 }

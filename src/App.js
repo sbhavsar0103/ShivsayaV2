@@ -12,6 +12,8 @@ import Coaching from './pages/coaching';
 import UsStudy from '../src/components/abroadpage/us_study';
 import CanadaStudy from '../src/components/abroadpage/canada_study';
 import AusStudy from '../src/components/abroadpage/austrila_study';
+import NzStudy from '../src/components/abroadpage/nz_study';
+import UkStudy from '../src/components/abroadpage/uk_study';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/shivasya-us" element={<UsStudy />} />
         <Route path="/shivasya-canada" element={<CanadaStudy />} />
         <Route path="/shivasya-austrila" element={<AusStudy />} />
+        <Route path="/shivasya-new-zealand" element={<NzStudy />} />
+        <Route path="/shivasya-uk" element={<UkStudy />} />
       </Routes>
     </BrowserRouter>
   );
