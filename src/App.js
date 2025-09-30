@@ -14,6 +14,7 @@ import CanadaStudy from '../src/components/abroadpage/canada_study';
 import AusStudy from '../src/components/abroadpage/austrila_study';
 import NzStudy from '../src/components/abroadpage/nz_study';
 import UkStudy from '../src/components/abroadpage/uk_study';
+import EuropeStudy from '../src/components/abroadpage/europe_study';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/shivasya-austrila" element={<AusStudy />} />
         <Route path="/shivasya-new-zealand" element={<NzStudy />} />
         <Route path="/shivasya-uk" element={<UkStudy />} />
+        <Route path="/shivasya-europe" element={<EuropeStudy />} />
       </Routes>
     </BrowserRouter>
   );

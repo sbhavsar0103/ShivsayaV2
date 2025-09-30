@@ -16,7 +16,7 @@ const Header = () => {
     { name: 'Australia', flag: australiaFlag, link: '/shivasya-austrila' },
     { name: 'New Zealand', flag: nzFlag, link: '/shivasya-new-zealand' },
     { name: 'UK', flag: ukFlag, link: '/shivasya-uk' },
-    { name: 'Europe', flag: europeFlag, link: '/study-abroad/europe' },
+    { name: 'Europe', flag: europeFlag, link: '/shivasya-europe' },
   ];
   const location = useLocation();
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
