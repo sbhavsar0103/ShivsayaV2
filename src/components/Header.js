@@ -82,7 +82,7 @@ const Header = () => {
                 <li className={isActive('/about') ? 'current' : ''}><Link to="/about"><b>About Shivasya</b></Link></li>
                 <li className={isActive('/services') ? 'current' : ''}><Link to="/services"><b>Our Services</b></Link></li>
                 <li className={isActive('/coaching') ? 'current' : ''}><Link to="/coaching"><b>Coaching</b></Link></li>
-                <li className={isActive('/contact') ? 'current' : ''}><Link to="/contact"><b>Contact Us</b></Link></li>
+                <li className={isActive('/shivasya-contact-us') ? 'current' : ''}><Link to="/shivasya-contact-us"><b>Contact Us</b></Link></li>
                 <li className="dropdown">
                   <span className="dropdown-toggle"><b>STUDY ABROAD</b></span>
                   <ul className="dropdown-menu">
@@ -95,14 +95,14 @@ const Header = () => {
                     ))}
                   </ul>
                 </li>
-                <Link to="/work-abroad" className="work-abroad-btn">
+                <Link to="/shivasya-contact-us" className="work-abroad-btn">
                   <span className="btn-title">Work Abroad</span>
                 </Link>
               </ul>
             </nav>
 
             <div className="outer-box">
-              <Link to="/contact" className="theme-btn btn-style-one bg-theme-color3">
+              <Link to="/shivasya-contact-us" className="theme-btn btn-style-one bg-theme-color3">
                 <span className="btn-title">Sign up for a FREE CONSULTATION</span>
               </Link>
               <div

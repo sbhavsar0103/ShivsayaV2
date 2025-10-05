@@ -40,19 +40,18 @@ const Footer = () => {
                     </div>
                     <div className="company-info">
                       <div className="address-info">
-                        <p>502 507 508 Addor Aspire University to Panjrapole Road,</p>
-                        <p>Opp. Gulbai Tekra BRTS Bus Stand,</p>
-                        <p>Nr. Jhanviee Restaurant, Navrangpura</p>
-                        <p>Ahmedabad 380 009 Gujarat INDIA</p>
+                        <p>117, University Plaza 120 Feet Ring Rd,</p>
+                        <p>near Vijay Cross Road, Navrangpura,</p>
+                        <p>Ahmedabad, Gujarat 380009</p>
                       </div>
                       <div className="contact-info">
                         <div className="phone-info">
                           <i className="fas fa-phone"></i>
-                          <a href="tel:+917486860001">+91 74 8686 0001</a>
+                          <a href="tel:+917486860001">+91 7567981608</a>
                         </div>
                         <div className="email-info">
                           <i className="fas fa-envelope"></i>
-                          <a href="mailto:inquiry@visazone.in">inquiry@visazone.in</a>
+                          <a href="mailto:services@shivasya.in">services@shivasya.in</a>
                         </div>
                       </div>
                     </div>
@@ -104,7 +103,8 @@ const Footer = () => {
                   <div className="widget-content">
                     <div className="map-container">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9234567890123!2d72.5647890123456!3d23.0358901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f123456789%3A0x123456789abcdef0!2sVisa%20Zone%20Education%20%26%20Immigration%20Services!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.536519230876!2d72.548413!3d23.0407839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85563a094e19%3A0xb71af9d02e48ba5a!2sShivasya%20Education%20and%20Immigration%20Services!5e0!3m2!1sen!2sin!4v1759594937779!5m2!1sen!2sin"
+                        referrerpolicy="no-referrer-when-downgrade"
                         width="100%"
                         height="200"
                         style={{ border: 0 }}

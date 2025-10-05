@@ -1,5 +1,6 @@
 import React from 'react';
-import desktopVideo from '../assets/videos/venturi-bg-video.mp4';
+// import desktopVideo from '../assets/videos/venturi-bg-video.mp4';
+import desktopVideo from '../assets/videos/shiv-bg.mp4';
 import mobileVideo from '../assets/videos/venturi-bg-mobile-video.mp4';
 import '../assets/styles/owl.css'; // Optional: only keep this if it includes other useful styles
 

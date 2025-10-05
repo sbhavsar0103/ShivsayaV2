@@ -126,7 +126,7 @@ const EuropeStudy = () => {
                         <p>
                             Acquiring a student visa for the European Union may appear challenging, yet with guidance to these steps from Europe Study Visa Consultants in Ahmedabad, careful adherence, and thorough research, it is possible to streamline the procedure and improve the prospects of student visa approval. Take free counseling at Shivasya Education and Immigration Services Pvt. Ltd. for your Study Abroad in Europe dreams.
                         </p>
-                        <div className='main-countries'>
+                        {/* <div className='main-countries'>
                             <h2>Most Popular Countries in Europe</h2>
                             <div class="countries">
                                 <div class="card">
@@ -229,7 +229,7 @@ const EuropeStudy = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="contact-form-section" style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                             <div className="container">
